@@ -1,0 +1,83 @@
+
+.competences-content .competence-categorie {
+    margin-bottom: 2.5rem;
+}
+
+.competence-categorie h3 {
+    color: #667eea;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #667eea;
+    font-size: 1.5em;
+}
+
+.competence-liste {
+    margin-top: 1rem;
+}
+
+.competence-item {
+    margin-bottom: 1rem;
+}
+
+.competence-nom {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.barre-progression {
+    width: 100%;
+    height: 25px;
+    background-color: #e0e0e0;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.progression {
+    height: 100%;
+    background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    color: white;
+    font-weight: bold;
+    transition: width 1s ease;
+    border-radius: 15px;
+}
+
+.liste-simple {
+    list-style: none;
+    padding-left: 0;
+}
+
+.liste-simple li {
+    padding: 0.7rem;
+    margin-bottom: 0.5rem;
+    background: #f9f9f9;
+    border-left: 3px solid #667eea;
+    padding-left: 1rem;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+.liste-simple li:hover {
+    background: #f0f0f0;
+    transform: translateX(5px);
+    border-left-width: 5px;
+}
+
+.liste-simple li::before {
+    content: "✓ ";
+    color: #667eea;
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .barre-progression {
+        height: 20px;
+    }
+}
